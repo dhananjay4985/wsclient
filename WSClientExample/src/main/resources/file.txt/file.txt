@@ -1,0 +1,32 @@
+Jar file creation using wsdl -->
+
+	open command prompt as Administartor
+	
+	GO to -> C:\xmlbeans-2.5.0\bin
+	
+	Syntax- > scomp -out {jar_file_name}.jar {wsdl_file_path}.wsdl -compiler {jdk path ..till.. \bin\javac}
+	
+	Enter below command -> 
+	scomp -out cordys_xmlbeans.jar C:\JarCreationFolder\SwapDigitenne_Frontdesk_March_2018\SwapDigitenne_Frontdesk.wsdl -compiler C:\eserver1\engine\jdk\bin\javac
+	
+	
+	Output Jar file -> C:\JarCreationFolder\SwapDigitenne_Frontdesk_March_2018
+	
+	output file(cordys_xmlbeans.jar) in folder C:\softwares\xmlbeans-2.5.0\bin	
+	------------------------------------------------------------------------------------------
+	
+	C:\wsimport -extension -keep C:\JarCreationFolder\PrequalNumberPortCheck\PrequalNumberPortCheck-v2.0.wsdl
+	
+------------------------------------------------------------------------------------------------------------------
+working command for STUB generation ->
+
+open command prompt as Administartor
+goto ->cd C:\axis2-1.5.1\bin
+
+Enter below command --> 
+
+command Syntax-> wsdl2java.bat -p {package name} -o client -uri {wsdl path}
+
+wsdl2java.bat -p com.kpn.enfinity.kpn_fiber_initialorder_app.webservice -o client -uri C:\JarCreationFolder\Pega6\Pega6_PackageAvailability.wsdl
+
+	
